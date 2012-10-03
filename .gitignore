@@ -1,0 +1,5 @@
+*.py?
+*.egg*
+*.gem
+*.swp
+.DS_Store
