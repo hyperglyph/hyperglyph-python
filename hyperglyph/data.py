@@ -16,13 +16,6 @@ CHUNKED = False # wsgiref is terrible - enable by default when the default wsgi 
 
 session = requests.session()
 
-# Fix for earlier versions of requests.
-# Todo: Replace requests exceptions with specific glyph exceptions
-
-if not issubclass(requests.exceptions.RequestException, RuntimeError):
-    requests.exceptions.RequestException.__bases__ = (RuntimeError,)
-
-
 def utcnow():
     return datetime.datetime.utcnow().replace(tzinfo=utc)
 
