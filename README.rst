@@ -175,7 +175,7 @@ unlike before, we can change object internals::
         ...
 
 The glyph.redirect means that instead of returning the User object
-directly, it should redirect to it's url. The client follows these
+directly, it should redirect to its url. The client follows these
 redirects automatically.
 
 Even though the internals have changed, the names haven't, so the client
